@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    my  life
+</title>
+    
+    <style>
+        .navbar{
+            display: flex;
+            justify-content:space-between;
+            background-color:black;
+            padding: 10px;
+            color:white;
+            align-items: center;
+          
+              }
+        .inner-nav{
+            display: flex;
+            gap: 10px;
+
+        }
+        .inner-nav a {
+            color: rgb(225, 222, 222);
+            text-decoration: none;
+        }
+        h1{font-size: 19px;}
+        h3{font-size: 16px;}
+        section{background-color: #ccc;}
+        #myform form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            gap: 10px;
+            margin: 0,auto;
+        }
+        #aboutme{
+             display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            gap: 10px;
+            margin: 0,auto;
+        }
+        .my-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            
+        }
+        .my-cards .card {
+            background-color:black;
+            color: #ccc;
+            padding: 20px;
+            border:radius 10px;
+        }
+        .mylogo{
+            max-width: 150px;
+        }
+        .bar{
+            padding: auto;
+            text-align:center ;
+        }
+        .form{
+            width: auto;
+            margin:auto;
+            text-align: center;
+            
+        }
+        .from-outer{
+             display: flex;
+            flex-direction: row;
+            gap: 400px;
+            justify-content:center;
+            align-items: center;
+            
+        }
+        @media (max-width:768px){
+            .my-cards{
+                flex-direction: column;
+            }
+        }
+    </style>
+    </head>
+    <body style="background-color:white;">
+        <main {
+            max-witdth: 1020px;
+            margin:0 auto;
+        }>
+        <nav class="navbar">
+            <iMg class="mylogo" src="https://www.biyanicolleges.org/wp-content/uploads/2024/03/cropped-cropped-logo-1.png.webp">
+                       <h1>My portfolio</h1>
+            <div class="inner-nav">  
+            <a href="https://www.google.com/" target="_blank"> Home </a>
+             <a href="#about me"> about me </a>
+              <a href="#myform">contact us</a>
+            </div>
+        </nav>
+       <br>
+        <section class="bar" id="about me">
+
+            <h1>My hobbies</h1>
+            <div class="my-cards">
+            <div class="card">
+                <h1>My Name is Naveen></h1>
+                <h3>I'm form 2nd sem.and form BCA stream</h3>
+                 <p> 
+        I'm  from jaipur and my collage neme is biyani collage ,jaipur
+       </p>
+            </div>
+          <div class="card">
+                 <h1>My name is Naveen Kumawat </h1>
+        <h3>I am study in collage</h3>
+        <p>My many hopies are :-playing,Reading,shoping etc. </p>
+
+          </div>
+          </div>
+        </section>
+
+
+       <section>
+      <details> 
+        <summary> I have a secret</summary>
+        <p> I can solve  the  Rubik's cube in a minute</p>
+      </details>
+
+       </section>
+     
+<section class="bar" id="Home"> 
+       <h1> My progress</h1>
+       <div class="my-cards">
+        <div class="card"> 
+            <label>my html progress</label>
+            <progress value="70" max="100"></progress>
+        </div>
+
+       <div class="card">
+        <label>my course progress</label>
+        <meter value="5" min="3" max="10" low="4" high="7"></meter>
+       </div>
+       </div>
+       
+</section  >
+<Section class="form" id="myform">
+    <h3> contact us</h3>
+    <div class="from-outer">
+        <div class="my details">
+            <h3>My email: </h3>
+            <p>hello@banti.com</p>
+            <h3>My phone :</h3>
+            <P>8278650999</P>
+        </div>
+    <form id="MyForm"> 
+        <input id="name" type="text" name="text"
+        placeholder="your Name">
+        <h3>Email id</h3>
+        <input id="email" type="email" name="email"
+        placeholder="Email" name="email"><br>
+        <select>
+            <option>1st year</option>
+            <option>2nd year</option>
+            <option>3rd year</option>
+        </select><br>
+            <input list="browsers" id="mylist"
+            placeholder="select or type">
+         <datalist id="browsers">
+                 <option>1st year</option>
+                 <option>2nd year</option>
+                 <option>3rd year</option>
+         </datalist>
+        <input id="textarea" type="message"
+        <textarea  rows ="4" placeholder="your message"></textarea><br>
+        <button  style="font-size: 40px;" >submit</button>
+    </form>
+</div>  
+</Section>
+
+       <section>
+        <table  border="1">
+            <thead>
+                <tr>
+            <th>Sr.No</th>
+            <th>Student name</th>
+            <th>Student class</th>
+            <th>hoppy</th>
+            <th>Student progress</th>
+            <th>meter</th>
+        </tr>
+            </thead>
+         <tbody>
+            <tr>
+            <td>1</td>
+            <td>Banti</td>
+            <td>1st Year</td>
+            <td>bollyball</td>
+            <td><progress value="70"max="100"></progress></td>
+            <td><meter value="5"min="3"max="10"low="4"high="7"></meter></td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td> Manish</td>
+                <td>2nd Year</td>
+                <td>cricet</td>
+                <td><progress value="70"max="100"></progress></td>
+                <td><meter value="5"min="3"max="10"low="4"high="7"></meter></td>
+            </tr>
+         </tbody>
+        </table>    
+       </section>
+
+       <section>
+        <audio controls loop>
+            <source src="beera bhat bharan ne aaje.mp3" type="audio/mpeg">
+        </audio>
+       </section>
+
+       <section>
+        <video loop controls muted >
+            <source src="sawariyaDJ.mp4" type="video/mp4">
+        </video>
+       </section>
+
+        </main>
+        
+
+        <script>
+          let MyForm=document.getElementById("MyForm");
+          MyForm.addEventListener("submit", function(event){
+            event.preventDefault();
+            let myName = document.getElementById("name");
+            let myEmail = document.getElementById("email");
+            let myTextArea = document.getElementById("textarea");
+
+
+            let nameValue = myName.value;
+            let emailValue = myEmail.value;
+            let textareaValue = myTextArea.value;
+
+
+            if(nameValue==="" || emailValue =="" || textareaValue ==""){
+                alert("enter value first");
+            }
+            else{
+                alert("success!!");
+            }
+          });
+        </script>
+    </body>
+</html>
